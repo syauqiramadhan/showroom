@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Showroom Mobil Pick-Up L300 & Off-Road Premium - Temukan kendaraan tangguh untuk kebutuhan Anda.">
+    <title>JAYA MOTOR | Spesialis L300 & Pick-Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">JAYA MOTOR</div>
+        <div class="nav-links">
+            <a href="#home">Beranda</a>
+            <a href="#catalog">Katalog</a>
+            <a href="#location">Lokasi</a>
+            <a href="#contact">Kontak</a>
+        </div>
+        <a href="#catalog" class="btn-primary" style="padding: 10px 20px; font-size: 0.8rem;">Cek Unit</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Mitsubishi L300: Rajanya Pick-Up</h1>
+            <p>Kendaraan niaga paling tangguh dan legendaris di Indonesia. Siap mendukung kesuksesan bisnis Anda.</p>
+            <a href="#catalog" class="btn-primary">Lihat Unit L300</a>
+        </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+        <div class="section-header">
+            <h2>Unit Tersedia</h2>
+            <p>Pilih varian L300 dan pick-up lainnya yang siap kerja hari ini.</p>
+        </div>
+
+        <div class="filters" id="filters">
+            <button class="filter-btn active" data-filter="all">Semua Unit</button>
+            <button class="filter-btn" data-filter="l300">Mitsubishi L300</button>
+            <button class="filter-btn" data-filter="pickup">Pick-Up Lain</button>
+        </div>
+
+        <div class="car-grid" id="carGrid">
+            <!-- Cars will be injected by JavaScript -->
+        </div>
+    </section>
+
+    <section class="location" id="location">
+        <div class="section-header">
+            <h2>Lokasi Kami</h2>
+            <p>Kunjungi showroom kami untuk cek unit secara langsung.</p>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.5984975841848!2d114.60585103564226!3d-3.3013654969865804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de4238539abc81b%3A0xffb0500c77fd9808!2sJl.%20Pangeran%20Hidayatullah%20144%2C%20Sungai%20Jingah%2C%20Kec.%20Banjarmasin%20Utara%2C%20Kota%20Banjarmasin%2C%20Kalimantan%20Selatan%2070122!5e0!3m2!1sid!2sid!4v1777128439636!5m2!1sid!2sid"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <div class="modal" id="carModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be injected by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="logo" style="margin-bottom: 20px;">JAYA MOTOR</div>
+        <p style="margin-bottom: 20px; color: var(--text-secondary);">Jl. Pangeran Hidayatullah 144, Banjarmasin Utara, Kota Banjarmasin</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://wa.me/6281774847434"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2024 Jaya Motor Showroom. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
