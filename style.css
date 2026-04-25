@@ -265,16 +265,17 @@ nav {
     align-items: center;
     justify-content: center;
     z-index: 2000;
-    padding: 20px;
+    padding: 10px;
 }
 
 .modal-content {
     background: var(--card-bg);
     max-width: 800px;
     width: 100%;
+    max-height: 90vh;
     border-radius: 20px;
     position: relative;
-    overflow: hidden;
+    overflow-y: auto;
     animation: modalScale 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -285,11 +286,25 @@ nav {
 
 .close-modal {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 2rem;
+    top: 15px;
+    right: 15px;
+    font-size: 1.8rem;
     cursor: pointer;
-    color: var(--text-secondary);
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 3000;
+    transition: var(--transition-smooth);
+}
+
+.close-modal:hover {
+    background: var(--accent-gold);
+    color: black;
 }
 
 .modal-body {
@@ -307,6 +322,11 @@ nav {
     .hero-content h1 {
         font-size: 3rem;
     }
+    .close-modal {
+        top: 10px;
+        right: 10px;
+        background: rgba(0,0,0,0.8); /* Darker on mobile for visibility */
+    }
 }
 
 .modal-img {
@@ -319,7 +339,7 @@ nav {
 }
 
 .modal-details {
-    padding: 40px;
+    padding: 30px;
 }
 
 /* Footer */
